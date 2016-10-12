@@ -1,0 +1,36 @@
+<form name="myForm" method="post" action="path/to/some-script.php">
+   ...
+</form>
+The "action" attribute tells where the form data should be sent
+The "method" attribute tells how the form data should be sent – via GET or POST request
+
+Single-line text input field:
+<input type="text" name="FirstName" value="This is a text field" />
+
+Multi-line text input fields:
+<textarea name="Comments">
+    This is a multi-line text field
+</textarea>
+
+Password input:
+<input type="password" name="pass"/>
+
+Reset button:
+<input type="reset" name="resetBtn"
+  value="Reset the form" />
+
+Submit button:
+ <input type="submit" src="submit.gif"
+  name="submitBtn" alt="Submit" />
+
+Image button:
+<input type="image" value="click me" />
+
+Ordinary button:
+<input type="button" value="Apply Now" />
+
+Checkboxes:
+<input type="checkbox" name="fruit" value="apple" />
+
+Radio buttons:
+<input type="radio" name="title" value="Mr." />
