@@ -10,14 +10,16 @@ namespace Age
     {
         static void Main(string[] args)
         {
-            DateTime dateOfBirth = Convert.ToDateTime(Console.ReadLine());
-            var today = DateTime.Today;
-            Console.WriteLine(Convert.ToString(today));
-            Console.WriteLine(Convert.ToString(dateOfBirth));
-            /*var a = (today.Year * 100 + today.Month) * 100 + today.Day;
-            var b = (dateOfBirth.Year * 100 + dateOfBirth.Month) * 100 + dateOfBirth.Day;
-
-            Console.WriteLine((a - b) / 10000); */
+            DateTime dateOfBirth = DateTime.ParseExact(Console.ReadLine(),"MM.dd.yyyy",null);
+            DateTime today = new DateTime(2016, 3, 3);
+            var age = today.Year - dateOfBirth.Year;
+            if (today.Month < dateOfBirth.Month || (today.Month == dateOfBirth.Month && today.Day < dateOfBirth.Day))
+            {
+                --age;
+            }
+            Console.WriteLine(age);
+            Console.WriteLine(age + 10);
+         
         }
     }
 }
