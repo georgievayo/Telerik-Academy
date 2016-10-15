@@ -7,7 +7,7 @@ class PrintTheASCIITable
         for (int i = 33; i <= 126; i++)
         {
             char symbol = (char)i;
-            Console.WriteLine(symbol);
+            Console.Write(symbol);
         }
     }
 }
