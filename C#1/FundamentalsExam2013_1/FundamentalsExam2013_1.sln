@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoFourEight", "TwoFourEight\TwoFourEight.csproj", "{7E49F0FA-BDF4-4130-B7AA-525368F3697F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NightmareOnCodeStreet", "NightmareOnCodeStreet\NightmareOnCodeStreet.csproj", "{27DE1E9F-6259-4ADC-96C0-23F6866CFF4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E49F0FA-BDF4-4130-B7AA-525368F3697F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E49F0FA-BDF4-4130-B7AA-525368F3697F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E49F0FA-BDF4-4130-B7AA-525368F3697F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E49F0FA-BDF4-4130-B7AA-525368F3697F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27DE1E9F-6259-4ADC-96C0-23F6866CFF4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27DE1E9F-6259-4ADC-96C0-23F6866CFF4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27DE1E9F-6259-4ADC-96C0-23F6866CFF4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27DE1E9F-6259-4ADC-96C0-23F6866CFF4D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

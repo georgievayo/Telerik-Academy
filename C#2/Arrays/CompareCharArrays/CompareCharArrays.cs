@@ -8,22 +8,18 @@ namespace CompareCharArrays
         {
             string firstArray = Console.ReadLine();
             string secondArray = Console.ReadLine();
-            for (int i = 0; i < firstArray.Length; i++)
+            int result = string.Compare(firstArray, secondArray, true);
+            if (result == -1)
             {
-                if ((int)firstArray[i] > (int)secondArray[i] || ((int)firstArray[i] == (int)secondArray[i] && i == firstArray.Length - 1 && firstArray.Length > secondArray.Length))
-                {
-                    Console.WriteLine(">");
-                    break;
-                }
-                else if ((int)firstArray[i] < (int)secondArray[i])
-                {
-                    Console.WriteLine("<");
-                    break;
-                }
-                else if ((int)firstArray[i] == (int)secondArray[i] && i == firstArray.Length - 1 && firstArray.Length == secondArray.Length)
-                {
-                    Console.WriteLine("=");
-                }
+                Console.WriteLine("<");
+            }
+            else if (result == 0)
+            {
+                Console.WriteLine("=");
+            }
+            else if (result == 1)
+            {
+                Console.WriteLine(">");
             }
         }
     }
