@@ -5,9 +5,9 @@ class FibonacciNumbers
     static void Main()
     {
         int n = int.Parse(Console.ReadLine());
-        int firstNumber = 0;
-        int secondNumber = 1;
-        int nextNumber;
+        long firstNumber = 0;
+        long secondNumber = 1;
+        long nextNumber = 0;
         if (n == 1)
         {
             Console.WriteLine(firstNumber);

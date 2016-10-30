@@ -29,6 +29,7 @@ namespace BinarySearch
                 if (arr[mid] == x)
                 {
                     Console.WriteLine(mid);
+                    break;
                 }
                 if (min > max && arr[mid] != x)
                 {

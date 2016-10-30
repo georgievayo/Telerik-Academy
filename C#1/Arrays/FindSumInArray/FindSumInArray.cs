@@ -31,7 +31,6 @@ namespace FindSumInArray
                         break;
                     }
                 }
-                
             }
         }
     }

@@ -16,7 +16,7 @@ namespace MaximalIncreasingSequence
             int counter = 1, maxCounter = 0;
             for (int i = 1; i < n; i++)
             {
-                if (arrOfNumbers[i] < numOfSequence)
+                if (arrOfNumbers[i] > numOfSequence)
                 {
                     numOfSequence = arrOfNumbers[i];
                     counter++;
@@ -25,7 +25,7 @@ namespace MaximalIncreasingSequence
                         maxCounter = counter;
                     }
                 }
-                else if (arrOfNumbers[i] >= numOfSequence)
+                else if (arrOfNumbers[i] <= numOfSequence)
                 {
                     numOfSequence = arrOfNumbers[i];
                     counter = 1;
