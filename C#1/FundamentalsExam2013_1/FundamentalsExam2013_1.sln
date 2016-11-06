@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoFourEight", "TwoFourEigh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NightmareOnCodeStreet", "NightmareOnCodeStreet\NightmareOnCodeStreet.csproj", "{27DE1E9F-6259-4ADC-96C0-23F6866CFF4D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enigmanation", "Enigmanation\Enigmanation.csproj", "{124D94EB-E59B-4E49-BF53-1756E94CF1C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{27DE1E9F-6259-4ADC-96C0-23F6866CFF4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27DE1E9F-6259-4ADC-96C0-23F6866CFF4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27DE1E9F-6259-4ADC-96C0-23F6866CFF4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{124D94EB-E59B-4E49-BF53-1756E94CF1C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{124D94EB-E59B-4E49-BF53-1756E94CF1C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{124D94EB-E59B-4E49-BF53-1756E94CF1C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{124D94EB-E59B-4E49-BF53-1756E94CF1C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
