@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FillTheMatrix", "FillTheMatrix\FillTheMatrix.csproj", "{D3CD00AE-4747-424F-96AA-29D54CC44719}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SequenceInMatrix", "SequenceInMatrix\SequenceInMatrix.csproj", "{726DAB22-C3DC-4076-8DF5-9C70D94ACCE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximalSum", "MaximalSum\MaximalSum.csproj", "{D1BB059A-E7FF-48E9-B4A6-71E594B7AB47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargestAreaInMatrix", "LargestAreaInMatrix\LargestAreaInMatrix.csproj", "{55F2475F-4E77-45C8-89AA-C16F839182DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3CD00AE-4747-424F-96AA-29D54CC44719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3CD00AE-4747-424F-96AA-29D54CC44719}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3CD00AE-4747-424F-96AA-29D54CC44719}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3CD00AE-4747-424F-96AA-29D54CC44719}.Release|Any CPU.Build.0 = Release|Any CPU
+		{726DAB22-C3DC-4076-8DF5-9C70D94ACCE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{726DAB22-C3DC-4076-8DF5-9C70D94ACCE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{726DAB22-C3DC-4076-8DF5-9C70D94ACCE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{726DAB22-C3DC-4076-8DF5-9C70D94ACCE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1BB059A-E7FF-48E9-B4A6-71E594B7AB47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1BB059A-E7FF-48E9-B4A6-71E594B7AB47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1BB059A-E7FF-48E9-B4A6-71E594B7AB47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1BB059A-E7FF-48E9-B4A6-71E594B7AB47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55F2475F-4E77-45C8-89AA-C16F839182DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55F2475F-4E77-45C8-89AA-C16F839182DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55F2475F-4E77-45C8-89AA-C16F839182DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55F2475F-4E77-45C8-89AA-C16F839182DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

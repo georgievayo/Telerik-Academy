@@ -1,0 +1,48 @@
+body{
+    background: #acada6;
+}
+
+h1{
+    color: lightgoldenrodyellow;
+    font-size: 20pt;
+}
+
+#important-heading{
+    text-align: center;
+    font-size:30pt;
+}
+
+li{
+    text-align: center;
+    list-style-type: none;
+    font-size: 18pt;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#underlined-a{
+    text-decoration: underline;
+}
+
+a.current{
+    background: silver;
+}
+
+p.posted{
+    font-size: 10pt;
+}
+
+a.name{
+    text-decoration: none;
+    color: black;
+}
+
+#final-footer{
+    text-align: center;
+    font-size: 13pt;
+}
+

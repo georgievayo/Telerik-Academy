@@ -1,0 +1,21 @@
+thead{
+    color: ghostwhite;
+    background: #44c948;
+}
+
+table{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+td{
+    width: 150px;
+}
+
+
+input[type=checkbox] { 
+    color: grey;
+}
+
+tr.different-background{
+    background: #d4d8af;
+}
