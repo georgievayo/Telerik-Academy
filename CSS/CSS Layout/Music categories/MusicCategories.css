@@ -1,0 +1,86 @@
+a{
+    text-decoration: none;
+    font-size: 12pt;
+    color: white;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+#text{
+    width: 300px;
+    height: 40px;
+    margin-left: 180px;
+    margin-top: -80px;
+}
+
+#main-div{
+    border-radius: 5px;
+    height: 470px;
+    width: 545px;
+    background: #f9f6f2;
+}
+
+body div span{
+    font-size: 14pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: -20px;
+    margin-left: 10px;
+}
+
+.post1{
+    margin-left: 20px;
+    margin-top: 20px;
+    border:1px solid grey;
+    width:500px;
+    height: 120px;
+    background: white;
+    }
+
+    .post2{
+            margin-left: -300px;
+    margin-top: 30px;
+    border:1px solid grey;
+    width:500px;
+    height: 120px;
+    background: white;
+    }
+
+    .post3{
+            margin-left: -300px;
+    margin-top: 30px;
+    border:1px solid grey;
+    width:500px;
+    height: 120px;
+    background: white;
+    }
+
+    img{
+        margin-top:20px;
+        margin-left: 20px;
+    }
+
+    .button1{
+        height: 25px;
+        width: 60px;
+        margin-left: 300px;
+        margin-top: 20px;
+    }
+
+  .listen{
+       margin-top: -30px;
+       margin-left: 18px;
+       font-size: 14pt;
+    }
+
+      .add{
+       margin-top: -30px;
+       margin-left: 22px;
+       font-size: 14pt;
+    }
+
+       .button2{
+        height: 25px;
+        width: 60px;
+        margin-left: 100px;
+        margin-top: -24px;
+    }

@@ -1,0 +1,94 @@
+body{
+background: rgba(26,26,31,1);
+background: -moz-linear-gradient(top, rgba(26,26,31,1) 0%, rgba(26,26,31,1) 62%, rgba(40,40,45,1) 72%, rgba(81,80,83,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(26,26,31,1)), color-stop(62%, rgba(26,26,31,1)), color-stop(72%, rgba(40,40,45,1)), color-stop(100%, rgba(81,80,83,1)));
+background: -webkit-linear-gradient(top, rgba(26,26,31,1) 0%, rgba(26,26,31,1) 62%, rgba(40,40,45,1) 72%, rgba(81,80,83,1) 100%);
+background: -o-linear-gradient(top, rgba(26,26,31,1) 0%, rgba(26,26,31,1) 62%, rgba(40,40,45,1) 72%, rgba(81,80,83,1) 100%);
+background: -ms-linear-gradient(top, rgba(26,26,31,1) 0%, rgba(26,26,31,1) 62%, rgba(40,40,45,1) 72%, rgba(81,80,83,1) 100%);
+background: linear-gradient(to bottom, rgba(26,26,31,1) 0%, rgba(26,26,31,1) 62%, rgba(40,40,45,1) 72%, rgba(81,80,83,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a1a1f', endColorstr='#515053', GradientType=0 );
+color: white;
+margin-top:0px;
+margin-left:0px;
+}
+
+.nav-tabs .file-html{
+background-image: url("./imgs/html-icon.png");
+background-size: 20px 20px;
+background-repeat: no-repeat;
+padding-left: 30px;
+padding-top: 5px;
+
+}
+
+.nav-tabs .selected{
+background-image: url("./imgs/css-icon.png");
+background-size: 20px 20px;
+background-repeat: no-repeat;
+padding-left: 30px;
+padding-top: 5px;
+background-color: black;
+}
+
+.nav-tabs .file-sass{
+        background-image: url("./imgs/sass-icon.png");
+background-size: 20px 20px;
+background-repeat: no-repeat;
+padding-left: 30px;
+padding-top: 5px;
+}
+
+.nav-tabs{
+list-style: none;
+padding-left: 0px;
+background: #494949;
+padding-top: 5px;
+padding-bottom: 5px;
+margin-top: 0px;
+}
+
+.nav-tabs li{
+    display: inline;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-left: 1px solid grey;
+}
+
+.nav-tabs li:hover{
+    background-color: dimgrey;
+    border: none;
+}
+
+.selector{
+    color: yellow;
+}
+
+ li .selector:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.property{
+    color: darkcyan;
+}
+
+.punctuation{
+    color: grey;
+}
+
+.function{
+    color: red;
+}
+
+.code-lines li:hover{
+    background: dimgrey;
+    font-weight: bold;
+}
+
+.code-lines li{
+    padding-top: 2pt;
+    padding-bottom: 2pt;
+}

@@ -1,0 +1,45 @@
+#name{
+    border: 1px solid black;
+}
+
+#email{
+    border: 1px solid black;
+}
+
+nav{
+    border: 2px outset black;
+    border-radius: 8px;
+    height: 70px;
+}
+nav table{
+    column-width: 80px;
+}
+
+#navigation{
+    font-size: 18pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+}
+
+#main-div{
+    background:#424242;
+    border-radius: 8px;
+    width: 800px;
+    height: 400px;
+}
+
+#text{
+    color: silver;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+#white-text{
+    color: white;
+}
+
+h1{
+    color:greenyellow;
+    margin-left: 15px;
+}

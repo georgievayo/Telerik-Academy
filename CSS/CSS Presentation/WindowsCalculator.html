@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Windows Calculator</title>
+    <link rel="stylesheet" href="WindowsCalculator.css">
+</head>
+
+<body>
+    <div id="hole-calculator">
+    <nav>
+        <ul>
+            <li>
+                <span>V</span>iew
+            </li>
+            <li>
+                <span>E</span>dit
+            </li>
+            <li>
+                <span>H</span>elp
+            </li>
+        </ul>
+    </nav>
+    <div>
+    <section id="result">
+        <div><strong>8854455</strong></div>
+    </section>
+    <section>
+        <table>
+            <tr>
+                <td>
+                    0000
+                </td>
+                <td>
+                    0000
+                </td>
+                <td>
+                    0000
+                </td>
+                <td>
+                    0000
+                </td>
+                <td>
+                    0000
+                </td>
+                <td>
+                    0000
+                </td>
+                <td>
+                    0000
+                </td>
+                <td>
+                    0000
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    63
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    47
+                <td></td>
+                <td></td>
+                <td class="last">
+                      32
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    0000
+                </td>
+                <td>
+                    0000
+                </td>
+                <td>
+                    1000
+                </td>
+                <td>
+                    0111
+                </td>
+                <td>
+                    0001
+                </td>
+                <td>
+                    1011
+                </td>
+                <td>
+                    1011
+                </td>
+                <td>
+                    0111
+                </td>
+            </tr>
+            <tr>
+                 <td>
+                    31
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    15
+                <td></td>
+                <td></td>
+                <td class="last">
+                      0
+                </td>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+     <aside>
+        <div>
+        <input type="radio" id="Hex" name="number-system" value="hex"/>
+        <label for="Hex">Hex</label>
+        <br>
+        <input type="radio" id="Dec" name="number-system" value="dec"/>
+        <label for="Dec">Dec</label>
+        <br>
+        <input type="radio" id="Oct" name="number-system" value="oct"/>
+        <label for="Oct">Oct</label>
+        <br>
+        <input type="radio" id="Bin" name="number-system" value="bin"/>
+        <label for="Bin">Bin</label>
+        </div>
+    </aside>
+
+    <aside>
+        <div>
+        <input type="radio" id="Qword" name="number-system" value="qword"/>
+        <label for="Qword">Qword</label>
+        <br>
+        <input type="radio" id="Dword" name="number-system" value="dword"/>
+        <label for="Dword">Dword</label>
+        <br>
+        <input type="radio" id="Word" name="number-system" value="word"/>
+        <label for="Word">Word</label>
+        <br>
+        <input type="radio" id="Byte" name="number-system" value="byte"/>
+        <label for="Byte">Byte</label>
+        </div>
+    </aside>
+
+    <footer>
+    <table id="buttons">
+        <tr>
+            <td>
+                <button id="disabled-button"></button>
+            </td>
+            <td>
+                <button>Mod</button>
+            </td>
+            <td>
+                <button>A</button>
+            </td>
+            <td>
+                <button>MC</button>
+            </td>
+            <td>
+                <button>MR</button>
+            </td>
+            <td>
+                <button>MS</button>
+            </td>
+            <td>
+                <button>M+</button>
+            </td>
+            <td>
+                <button>M-</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button>(</button>
+                </td>
+                <td>
+                <button>)</button>
+            </td>
+            <td>
+                <button>B</button>
+            </td>
+            <td>
+                <button>&larr;</button>
+            </td>
+            <td>
+                <button id="pressed">CE</button>
+            </td>
+            <td>
+                <button>C</button>
+            </td>
+            <td>
+                <button>&plusmn;</button>
+            </td>
+            <td>
+                <button>&radic;</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button>RoL</button>
+            </td>
+            <td>
+                <button>RoR</button>
+            </td>
+            <td>
+                <button>C</button>
+            </td>
+            <td>
+                <button>7</button>
+            </td>
+            <td>
+                <button>8</button>
+            </td>
+            <td>
+                <button>9</button>
+            </td>
+            <td>
+                <button>/</button>
+            </td>
+            <td>
+                <button>%</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button>Or</button>
+            </td>
+            <td>
+                <button>Xor</button>
+            </td>
+            <td>
+                <button>D</button>
+            </td>
+            <td>
+                <button>4</button>
+            </td>
+            <td>
+                <button>5</button>
+            </td>
+            <td>
+                <button>6</button>
+            </td>
+            <td>
+                <button>*</button>
+            </td>
+            <td>
+                <button>1/x</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button>Lsh</button>
+            </td>
+            <td>
+                <button>Rsh</button>
+            </td>
+            <td>
+                <button>E</button>
+            </td>
+            <td>
+                <button>1</button>
+            </td>
+            <td>
+                <button>2</button>
+            </td>
+            <td>
+                <button>3</button>
+            </td>
+            <td>
+                <button>-</button>
+            </td>
+            <td rowspan="2">
+                <button id="equal"><strong>=</strong></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button>Not</button>
+            </td>
+            <td>
+                <button>And</button>
+            </td>
+            <td>
+                <button>F</button>
+            </td>
+            <td colspan="2">
+                <button id="zero">0</button>
+            </td>
+            <td>
+                <button>.</button>
+            </td>
+            <td>
+                <button>+</button>
+            </td>
+        </tr>
+    </table>
+</footer>
+    </div>
+    </div>
+</body>
+</html>

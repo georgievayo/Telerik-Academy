@@ -1,0 +1,115 @@
+.logo{
+    border: 1px solid silver;
+    width: 50px;
+    float: left;
+}
+
+.name{
+    color: mediumblue;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16pt;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+}
+
+.timestamp{
+    text-decoration: none;
+    color: silver;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+}
+
+.header{
+    margin-left: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: silver;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.title{
+    font-size: 18pt;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.author{
+    color: silver;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.capital{
+    color: silver;
+    font-family: Arial, Helvetica, sans-serif;
+     text-transform: uppercase;
+     margin-left: 20px;
+     padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.main-image{
+    width:550px;
+}
+
+.event{
+        margin-left: 20px;
+     box-shadow: 2px 2px 2px 2px #dee1e5;
+     width: 550px;
+}
+
+#wrapper{
+    border: 2px solid silver;
+    width: 600px;
+    height: 620px;
+    border-radius: 3px;
+}
+
+.footer{
+    margin-top: 30px;
+    border-top: 1px solid silver;
+}
+
+.like{
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    font-weight: bold;
+    text-decoration: none;
+    background: url("./imgs/like.png");
+    background-size: 18px 18px;
+    padding-left: 25px;
+    margin-left: 30px;
+    background-repeat: no-repeat;
+
+}
+
+.comment{
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 50px;
+    background: url("./imgs/comment.png");
+    background-size: 18px 18px;
+    padding-left: 25px;
+    background-repeat: no-repeat;
+}
+
+.share{
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    font-weight: bold;
+    text-decoration: none;
+    background: url("./imgs/share.png");
+    background-size: 18px 18px;
+    padding-left: 25px;
+    margin-left: 50px;
+    background-repeat: no-repeat;
+}
