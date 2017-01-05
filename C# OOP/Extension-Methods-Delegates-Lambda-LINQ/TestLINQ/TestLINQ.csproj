@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3AF02595-E797-42B7-8A90-7E357C9F5556}</ProjectGuid>
+    <ProjectGuid>{B9BDA56F-B37E-420D-9CC4-176523A1580B}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Points</RootNamespace>
-    <AssemblyName>Points</AssemblyName>
+    <RootNamespace>TestLINQ</RootNamespace>
+    <AssemblyName>TestLINQ</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Student">
+      <HintPath>..\Student\bin\Debug\Student.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,11 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculator.cs" />
-    <Compile Include="Path.cs" />
-    <Compile Include="PathStorage.cs" />
-    <Compile Include="Point3D.cs" />
-    <Compile Include="PointsTest.cs" />
+    <Compile Include="TestLINQ.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

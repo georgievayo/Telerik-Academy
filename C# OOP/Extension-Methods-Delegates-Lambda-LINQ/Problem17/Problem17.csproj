@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3AF02595-E797-42B7-8A90-7E357C9F5556}</ProjectGuid>
+    <ProjectGuid>{CD41A303-0721-40D6-A04C-656B5C8134B8}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Points</RootNamespace>
-    <AssemblyName>Points</AssemblyName>
+    <RootNamespace>Problem17</RootNamespace>
+    <AssemblyName>Problem17</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculator.cs" />
-    <Compile Include="Path.cs" />
-    <Compile Include="PathStorage.cs" />
-    <Compile Include="Point3D.cs" />
-    <Compile Include="PointsTest.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
