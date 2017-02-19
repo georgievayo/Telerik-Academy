@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CatalogueLib.Mobile">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAiAAAAAAAAAAEEAAIAAACAAAAAAAIAAggAAAAAAAA=</HashCode>
+      <FileName>Products\Mobile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CatalogueLib.Products.EBook">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\Mobile\Ebook.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CatalogueLib.Products.MobilePhone">
+    <Position X="3.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAIAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\Mobile\MobilePhone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CatalogueLib.Products.SmartWatch">
+    <Position X="6.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAEAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\Mobile\SmartWatch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CatalogueLib.Products.Tablet">
+    <Position X="9.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAQEAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\Mobile\Tablet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

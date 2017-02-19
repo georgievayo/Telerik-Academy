@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Product>
+  <AirConditioner>
+    <!--CountryOfBirth(origin)-->
+    <id>1</id>
+    <price>23</price>
+    <isAvailable>true</isAvailable>
+    <brand>14</brand>
+    <color>pink</color>
+    <origin>South Korea</origin>
+    <typeOfSystem>some system</typeOfSystem>
+    <HasWiFi>yes</HasWiFi>
+  </AirConditioner>
+  <AirConditioner>
+    <!--CountryOfBirth(origin)-->
+    <id>13</id>
+    <price>3</price>
+    <isAvailable>true</isAvailable>
+    <brand>14</brand>
+    <color>pink</color>
+    <origin>South Korea</origin>
+    <typeOfSystem>some system</typeOfSystem>
+    <HasWiFi>true</HasWiFi>
+  </AirConditioner>
+  <Oven>
+    <id>2</id>
+    <price>44</price>
+    <isAvailable>true</isAvailable>
+    <brand>1</brand>
+    <color>inox</color>
+    <origin>some country</origin>
+    <electricOrGas>el</electricOrGas>
+  </Oven>
+  <Refrigerator>
+    <id>3</id>
+    <price>434</price>
+    <isAvailable>true</isAvailable>
+    <brand>5</brand>
+    <color>red</color>
+    <origin>some country</origin>
+    <typeOfTechnology>tech</typeOfTechnology>
+  </Refrigerator>
+  <WashingMachine>
+    <id>4</id>
+    <price>123</price>
+    <isAvailable>true</isAvailable>
+    <brand>7</brand>
+    <color>white</color>
+    <origin>fdfs</origin>
+    <laundryCapacity>3</laundryCapacity>
+    <motorType>some motor</motorType>
+  </WashingMachine>
+  <HairDryer>
+    <id>15</id>
+    <price>42</price>
+    <isAvailable>true</isAvailable>
+    <brand>3</brand>
+    <capacity>3</capacity>
+    <cableLength>200</cableLength>
+    <affixes>2</affixes>
+    <differentSpeeds>2</differentSpeeds>
+  </HairDryer>
+  <Mixer>
+    <id>5</id>
+    <price>55</price>
+    <isAvailable>true</isAvailable>
+    <brand>5</brand>
+    <capacity>5</capacity>
+    <cableLength>5</cableLength>
+    <affixes>3</affixes>
+    <hasBowl>true</hasBowl>
+  </Mixer>
+  <VacuumCleaner>
+    <id>6</id>
+    <price>44</price>
+    <isAvailable>true</isAvailable>
+    <brand>11</brand>
+    <capacity>33</capacity>
+    <cableLength>2</cableLength>
+    <affixes>1</affixes>
+    <garbageBagVolume>3</garbageBagVolume>
+  </VacuumCleaner>
+  <!-- int ID, decimal price, bool isAvailable, Brand brand, int Memory, 
+        string CPU, int RAM, string Model, Battery battery,
+        string connectivity, bool ExpandableMemory,
+        double ScreenSize, string SupportedFileFormat) -->
+  <Ebook>
+    <id>7</id>
+    <price>77</price>
+    <isAvailable>true</isAvailable>
+    <brand>8</brand>
+    <memory>555</memory>
+    <CPU>some cpu</CPU>
+    <RAM>666</RAM>
+    <model>some model</model>
+    <battery>lion</battery>
+    <connectivity>conected</connectivity>
+    <expandableMemory>true</expandableMemory>
+    <screenSize>22</screenSize>
+    <supportedFileFormat>meny formats</supportedFileFormat>
+  </Ebook>
+  <MobilePhone>
+    <id>8</id>
+    <price>88</price>
+    <isAvailable>true</isAvailable>
+    <brand>3</brand>
+    <memory>55</memory>
+    <CPU>bla bla</CPU>
+    <RAM>43434</RAM>
+    <model>cool model</model>
+    <battery>some batery</battery>
+    <connectivity>conection...</connectivity>
+    <expandableMemory>true</expandableMemory>
+    <screenSize>55</screenSize>
+    <GPU>gpppuuuu</GPU>
+    <OperatingSystem>unknown</OperatingSystem>
+  </MobilePhone>
+  <SmartWatch>
+    <id>9</id>
+    <price>99</price>
+    <isAvailable>true</isAvailable>
+    <brand>6</brand>
+    <memory>565</memory>
+    <CPU>pfff</CPU>
+    <RAM>2131</RAM>
+    <model>nice</model>
+    <battery>bbbat</battery>
+    <connectivity>ggg</connectivity>
+    <expandableMemory>true</expandableMemory>
+    <screenSize>66</screenSize>
+    <size>1</size>
+    <waterResistance>true</waterResistance>
+  </SmartWatch>
+  <Tablet>
+    <id>10</id>
+    <price>12</price>
+    <isAvailable>true</isAvailable>
+    <brand>12</brand>
+    <memory>22</memory>
+    <CPU>fsdf</CPU>
+    <RAM>21</RAM>
+    <model>ggg</model>
+    <battery>rrr</battery>
+    <connectivity>rgrg</connectivity>
+    <expandableMemory>true</expandableMemory>
+    <screenSize>44</screenSize>
+    <frontCamera>5</frontCamera>
+    <backCamera>5</backCamera>
+    <hasGPS>true</hasGPS>
+  </Tablet>
+  <Desktop>
+    <id>11</id>
+    <price>4343</price>
+    <isAvailable>true</isAvailable>
+    <brand>9</brand>
+    <CPU>rgerg</CPU>
+    <driveMemory>444</driveMemory>
+    <videoCardModel>tttth</videoCardModel>
+    <operationSystem>oooo</operationSystem>
+    <screenSize>23</screenSize>
+    <RAM>555</RAM>
+    <hasDVDRecorder>true</hasDVDRecorder>
+  </Desktop>
+  <Laptop>
+    <id>12</id>
+    <price>2222</price>
+    <isAvailable>true</isAvailable>
+    <brand>13</brand>
+    <CPU>ffffff</CPU>
+    <driveMemory>3333333</driveMemory>
+    <videoCardModel>ggtgtg</videoCardModel>
+    <operationSystem>eeeeeeee</operationSystem>
+    <screenSize>16</screenSize>
+    <RAM>4444444</RAM>
+    <howManyUSBPorts>3</howManyUSBPorts>
+  </Laptop>
+  <AirConditioner>
+    <id>16</id>
+    <price>46</price>
+    <isAvailable>true</isAvailable>
+    <brand>3</brand>
+    <color>black</color>
+    <origin>bg</origin>
+    <typeOfSystem>fff</typeOfSystem>
+    <HasWiFi>false</HasWiFi>
+  </AirConditioner>
+  <AirConditioner>
+    <id>17</id>
+    <price>555</price>
+    <isAvailable>true</isAvailable>
+    <brand>7</brand>
+    <color>pink</color>
+    <origin>Germany</origin>
+    <typeOfSystem>Sys</typeOfSystem>
+    <HasWiFi>false</HasWiFi>
+  </AirConditioner>
+</Product>

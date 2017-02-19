@@ -15,17 +15,17 @@ namespace StudentLib
         private string fn;
         private string tel;
         private string email;
-        private LinkedList<int> marks;
+        private List<int> marks;
         private Group group;
 
         public string FirstName { get { return this.firstName; } private set { this.firstName = value; } }
         public string LastName { get { return this.lastName; } private set { this.lastName = value; } }
-        public int Age { get; set; }
-        public string FN { get; set; }
-        public string Tel { get; set; }
-        public string Email { get; set; }
-        public List<int> Marks { get; set; }
-        public Group MyGroup { get; set; }
+        public int Age { get { return this.age; } private set { this.age = value; } }
+        public string FN { get { return this.fn; } private set { this.fn = value; } }
+        public string Tel { get { return this.tel; } private set { this.tel = value; } }
+        public string Email { get { return this.email; } private set { this.email = value; } }
+        public List<int> Marks { get { return this.marks; } private set { this.marks = value; } }
+        public Group MyGroup { get { return this.group; } private set { this.group = value; } }
 
         public Student(string firstName, string lastName)
         {
