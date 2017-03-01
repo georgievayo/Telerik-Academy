@@ -6,7 +6,7 @@ function solve(args){
         output += parseInt(findNum(number[i]) * Math.pow(16, len - i - 1));
     }
     console.log(output);
-}
+
 
 function findNum(symbol)
 {
@@ -30,6 +30,7 @@ function findNum(symbol)
         case 'F': return 15;
         
     }
+}
 }
 
 solve(['FE']);
