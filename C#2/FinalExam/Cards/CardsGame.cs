@@ -6,22 +6,24 @@ using System.Threading.Tasks;
 
 namespace Cards
 {
-    class Cards
+    class CardsGame
     {
         static string[] deck = {"2c", "3c", "4c", "5c", "6c", "7c", "8c", "9c", "Tc", "Jc", "Qc", "Kc", "Ac",
         "2d", "3d", "4d", "5d", "6d", "7d", "8d", "9d", "Td", "Jd", "Qd", "Kd", "Ad",
         "2h", "3h", "4h", "5h", "6h", "7h", "8h", "9h", "Th", "Jh", "Qh", "Kh", "Ah",
         "2s", "3s", "4s", "5s", "6s", "7s", "8s", "9s", "Ts", "Js", "Qs", "Ks", "As"};
+        
         static void Main(string[] args)
         {
-            
+            // Get initial data
             int n = int.Parse(Console.ReadLine());
             long[] hands = new long[n];
             for (int i = 0; i < n; i++)
             {
                 hands[i] = long.Parse(Console.ReadLine());
             }
-            int[] arr = new int[52];
+
+            int[] myDeck = new int[52];
 
             long result = 0;
             for (int i = 0; i < n; i++)
@@ -31,11 +33,13 @@ namespace Cards
                 {
                     if (binNumber[j] == '1')
                     {
-                        arr[51 - j]++;
+                        myDeck[51 - j]++;
                     }
                 }
+
                 result = result | hands[i];
             }
+
             if (result == 4503599627370495)
             {
                 Console.WriteLine("Full deck");
@@ -47,7 +51,7 @@ namespace Cards
 
             for (int i = 0; i < 52; i++)
             {
-                if (arr[i] % 2 != 0)
+                if (myDeck[i] % 2 != 0)
                 {
                     Console.Write("{0} ", deck[i]);
                 }

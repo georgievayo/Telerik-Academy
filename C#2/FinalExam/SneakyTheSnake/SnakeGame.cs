@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace SneakyTheSnake
 {
-
-    class SneakyTheSnake
+    class SnakeGame
     {
         static void Main(string[] args)
         {
@@ -54,12 +53,11 @@ namespace SneakyTheSnake
                     case "a": horizontalStep = -1; break;
                     case "d": horizontalStep = 1; break;
                     default:
-                        break;
+                        throw new Exception("Invalid direction!");
                 }
 
                 if (directions[i] == "s" || directions[i] == "w")
                 {
-
                     curRow += verticalStep;
                     if (length <= 0 && terrain[curRow, curCol] != '@')
                     {
@@ -135,16 +133,6 @@ namespace SneakyTheSnake
                     }
                 }
             }
-
-            //Print
-            //for (int i = 0; i < rows; i++)
-            //{
-            //    for (int j = 0; j < cols; j++)
-            //    {
-            //        Console.Write("{0} ", terrain[i,j]);
-            //    }
-            //    Console.WriteLine();
-            //}
         }
     }
 }

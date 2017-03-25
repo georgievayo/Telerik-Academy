@@ -6,10 +6,27 @@ using System.Threading.Tasks;
 
 namespace Animals
 {
-    class Program
+    class JumpGame
     {
         static int[][] terrain;
-        static void PrintArray()
+        static void FillTerrain()
+        {
+            for (int i = 0; i < terrain.Length; i++)
+            {
+                for (int j = 0; j < terrain[i].Length; j++)
+                {
+                    if (j == 0)
+                    {
+                        terrain[i][j] = i + 1;
+                    }
+                    else
+                    {
+                        terrain[i][j] = terrain[i][j - 1] + terrain[i][0];
+                    }
+                }
+            }
+        }
+        static void PrintTerrain()
         {
             for (int i = 0; i < terrain.Length; i++)
             {
@@ -17,20 +34,11 @@ namespace Animals
                 {
                     Console.Write("{0} ", terrain[i][j]);
                 }
+
                 Console.WriteLine();
             }
         }
 
-        static int RabbitJump(int currentRow, int currentCol, string direction)
-        {
-            int sum = 0;
-
-            while (true)
-            {
-
-            }
-            return sum;
-        }
         static void Main(string[] args)
         {
             int baseCol = int.Parse(Console.ReadLine());
@@ -51,35 +59,7 @@ namespace Animals
             }
 
             terrain = new int[totalRow][];
-
-            //Build the terrain
-            for (int i = 0; i < totalRow; i++)
-            {
-                if (i < totalRow/2)
-                {
-                    terrain[i] = new int[(i + 1) * baseCol];
-                }
-                else
-                {
-                    terrain[i] = new int[(totalRow - i) * baseCol];
-                }
-            }
-
-            // Fill the terrain
-            for (int i = 0; i < terrain.Length; i++)
-            {
-                for (int j = 0; j < terrain[i].Length; j++)
-                {
-                    if (j == 0)
-                    {
-                        terrain[i][j] = i + 1;
-                    }
-                    else
-                    {
-                        terrain[i][j] = terrain[i][j-1]+ terrain[i][0];
-                    }
-                }
-            }
+            
 
             int[] currentR = { initialRabbit[0], initialRabbit[1] };
 
