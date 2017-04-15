@@ -50,6 +50,7 @@ function solve() {
 
 		// SELECT CELL
 		$('.spreadsheet-item').on('mousedown', function (event) {
+			$('.spreadsheet-item').each((i, el) => el.className -= 'selected');
 			var cell = event.target;
 			if ($(cell).hasClass('spreadsheet-cell')) {
 				var index = $(cell).attr('index');
