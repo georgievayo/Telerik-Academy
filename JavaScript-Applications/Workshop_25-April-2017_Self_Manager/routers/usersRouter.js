@@ -20,8 +20,7 @@ module.exports = function(db) {
       });
     })
     .post('/', function(req, res) {
-      var user = req.body;
-      console.log(user);
+      var user = req.body.data;
       user.usernameLower = user.username.toLowerCase();
       user.authKey = authKeyGenerator.get(user.id);
       if (db('users').find({
@@ -39,7 +38,7 @@ module.exports = function(db) {
         });
     })
     .put('/auth', function(req, res) {
-      var user = req.body;
+      var user = req.body.data;
       var dbUser = db('users').find({
         usernameLower: user.username.toLowerCase()
       });

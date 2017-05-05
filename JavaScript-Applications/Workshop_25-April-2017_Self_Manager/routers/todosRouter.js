@@ -8,6 +8,7 @@ module.exports = function(db) {
 
   router.get('/', function(req, res) {
       var user = req.user;
+      console.log(user);
       if (!user) {
         res.status(401)
           .json('Not authorized User');

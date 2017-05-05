@@ -8,14 +8,11 @@ let dataService = {
             passHash: CryptoJS.SHA1(user.username + user.password).toString()
         };
         return requester.postJSON('/api/users', { data: newUser })
-            .then((data) => {
-                let user = data.result;
-                localStorage.setItem(LOCAL_STORAGE_USERNAME_KEY, user.username);
-                localStorage.setItem(LOCAL_STORAGE_AUTHKEY_KEY, user.authKey);
-                return {
-                    username: resp.result.username
-                };
-            });
+        .then((user) => {
+            console.log(user);
+            localStorage.setItem(LOCAL_STORAGE_USERNAME_KEY, user.result.username);
+            localStorage.setItem(LOCAL_STORAGE_AUTHKEY_KEY, user.result.authKey);
+        });
     },
     signIn: function (user) {
         let userToLog = {
@@ -23,21 +20,48 @@ let dataService = {
             passHash: CryptoJS.SHA1(user.username + user.password).toString()
         };
 
-        return requester.getJSON('/api/users', { data: userToLog })
+        requester.putJSON('/api/users/auth', { data: userToLog })
             .then((data) => {
-                let foundUser = dat.result;
-                localStorage.setItem(LOCAL_STORAGE_USERNAME_KEY, user.username);
-                localStorage.setItem(LOCAL_STORAGE_AUTHKEY_KEY, user.authKey);
-                return foundUser;
-            })
+                console.log(data);
+                let foundUser = data.result;
+                localStorage.setItem(LOCAL_STORAGE_USERNAME_KEY, foundUser.username);
+                localStorage.setItem(LOCAL_STORAGE_AUTHKEY_KEY, foundUser.authKey);
+            });
+    },
+    signOut: function () {
+        return Promise.resolve()
+            .then(() => {
+                localStorage.removeItem(LOCAL_STORAGE_USERNAME_KEY);
+                localStorage.removeItem(LOCAL_STORAGE_AUTHKEY_KEY);
+            });
+    },
+    hasUser: function () {
+        return !!localStorage.getItem(LOCAL_STORAGE_USERNAME_KEY) &&
+            !!localStorage.getItem(LOCAL_STORAGE_AUTHKEY_KEY);
+    },
+    getCurrentUser: function () {
+        return {
+            headers: {
+                'x-auth-key': localStorage.getItem(LOCAL_STORAGE_AUTHKEY_KEY)
+            }
+        };
     },
     createTodo: function (todo) {
-        return requester.postJSON('/api/todos/create', todo);
+        let options = this.getCurrentUser();
+        return requester.postJSON('/api/todos', todo, options);
     },
-    createEvent: function(event){
-        return requester.postJSON('/api/events/create', event);
+    createEvent: function (event) {
+        let options = getCurrentUser();
+        return requester.postJSON('/api/events', event, options);
+    },
+    allTodos: function(){
+        var options = {
+            headers: {
+                'x-auth-key': localStorage.getItem(LOCAL_STORAGE_AUTHKEY_KEY)
+                }
+        };
+        return requester.getJSON('/api/todos', options)
+        .then((data) => console.log(data));
     }
 
 };
-
-module.exports = dataService;

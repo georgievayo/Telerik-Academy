@@ -78,6 +78,34 @@
       "usernameLower": "cuki3",
       "authKey": "undefined&a*=xajP_XX&NIPuGIJIgcTfFWlZ&#BdA*zD*@TUUvNc^TmOfw(",
       "id": "22402c86-f18e-4689-9fc3-237205fad856"
+    },
+    {
+      "username": "sammy",
+      "passHash": "dc164909990ec32a43f9f7f46bb9585da6b36001",
+      "usernameLower": "sammy",
+      "authKey": "undefinedwR#_@o-SbvXDDtS!ptUwhqXdbtAL$qtfaQyEXhusgk^wuTJK!_i",
+      "id": "3dc692cf-8ff9-4b78-9eef-80525cb354ac"
+    },
+    {
+      "username": "test",
+      "passHash": "51abb9636078defbf888d8457a7c76f85c8f114c",
+      "usernameLower": "test",
+      "authKey": "undefined!GFfVRohFbaTDR#Kg$k!Skm(Fc=Lxm)Unh@EVYcQXwfotdb&Cwg",
+      "id": "2774235c-5c8c-4f70-a23a-ca8533fc20e6",
+      "todos": [
+        {
+          "id": 27882,
+          "text": "qwe",
+          "state": true,
+          "category": "Home"
+        },
+        {
+          "id": 365117,
+          "text": "NEW TODO",
+          "state": false,
+          "category": "Home"
+        }
+      ]
     }
   ]
 }

@@ -2,31 +2,91 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TODO</title>
+  <meta charset="UTF-8">
+  <title>Self Manager</title>
+  <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-    <div id="main"></div>
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
-    <script src="bower_components/jt.timepicker/jquery.timepicker.js"></script>
-    <script src="bower_components/sammy/lib/sammy.js"></script>
-    <script src="bower_components/handlebars/handlebars.js"></script>
-    <script src="bower_components/sha1/index.js"></script>
-    <script src="bower_components/lodash/lodash.js"></script>
-    <script src="bower_components/moment/moment.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/toastr/toastr.js"></script>
+  <div id="root">
+    <header class="container">
+      <div class="row">
+        <h1 class="page-header col-md-6">Self Manager
+          <small>Self Manager</small>
+        </h1>
+        <form class="form-inline col-md-6" id="container-sign-in">
+          <div class="form-group">
+            <label class="sr-only" for="tb-username">Username</label>
+            <input type="text" class="form-control" id="tb-username" placeholder="Username">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="tb-password">Password</label>
+            <input type="password" class="form-control" id="tb-password" placeholder="Password">
+          </div>
+          <button id="btn-sign-in" class="btn btn-default">Sign in</button>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Remember me
+            </label>
+          </div>
+          <a href="#/users/register"> or Register</a>
+        </form>
+        <form class="form-inline col-md-6" id="container-sign-out">
+          <button id="btn-sign-out" class="btn btn-default">Sign out</button>
+        </form>
+      </div>
+      <nav class="navbar navbar-default row">
+        <ul class="nav navbar-nav col-md-8">
+          <li><a href="#/">Home</a></li>
+          <li><a href="#/todos">TODOs </a></li>
+          <li><a href="#/events">Events</a></li>
+          <li><a href="#/users">Users</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="content" class="container">
 
-    <script src="./controllers/events-controllers.js"></script>
-    <script src="./controllers/todos-controllers.js"></script>
+    </div>
+    <aside id="left">
 
-    <script src="./scripts/templater.js"></script>
-    <script src="./scripts/requester.js"></script>
-    <script src="./scripts/app.js"></script>
+    </aside>
+    <footer class="footer">
+      <div class="container">
+        <ul>
+          <li>
+            <a href="#">Github</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Libs -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/navigo/lib/navigo.js"></script>
+  <script src="./bower_components/handlebars/handlebars.js"></script>
+  <script src="./bower_components/crypto-js/crypto-js.js"></script>
+  <script src="bower_components/lodash/lodash.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+  <script src="./scripts/requester.js"></script>
+  <script src="./scripts/templater.js"></script>
+  <script src="./scripts/data-service.js"></script>
+  <!-- App -->
+
+  <!-- App: Controllers -->
+  <script src="./scripts/controllers/events-controllers.js"></script>
+  <script src="./scripts/controllers/todos-controllers.js"></script>
+  <script src="./scripts/controllers/user-controllers.js"></script>
+
+
+  <!-- App: Loaders -->
+
+  <!-- App: Start -->
+  <script src="./scripts/app.js"></script>
+
 </body>
 
 </html>

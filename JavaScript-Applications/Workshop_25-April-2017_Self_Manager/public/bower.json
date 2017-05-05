@@ -1,0 +1,18 @@
+{
+  "name": "public",
+  "homepage": "https://github.com/georgievayo/Telerik-Academy",
+  "authors": [
+    "Yoana Georgieva <yo.ana.georgieva@abv.bg>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -3,7 +3,7 @@ let requester = {
         let promise = new Promise((resolve, reject) => {
             $.ajax({
                 url,
-                method: "GET",
+                method: "GET",           
                 success(response) {
                     resolve(response);
                 }
@@ -45,11 +45,13 @@ let requester = {
         });
         return promise;
     },
-    getJSON: (url) => {
+    getJSON: (url, options = {}) => {
         let promise = new Promise((resolve, reject) => {
+            let headers = options.headers || {};
             $.ajax({
                 url,
                 method: "GET",
+                header: headers,
                 contentType: "application/json",
                 success: (response) => {
                     resolve(response);

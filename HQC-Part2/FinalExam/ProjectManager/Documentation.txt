@@ -1,0 +1,11 @@
+﻿Bugs:
+
+#1 В Main метода при създаването на Engine се подава string вместо FileLogger.
+#2 В класа CommandsFactory, метода CreateCommandFromString е пропуснат случая, когато се създава User.
+#3 В класа ModelsFactory при създаването на нов User е объркана последователността на username и email.
+#4 В класа Task в метода ToString() е изпуснат ред, който отпечатва owner-a.
+#5 В Start метода на Engine не се извиква logger в някои от случаите.
+
+Bottleneck:
+
+#1

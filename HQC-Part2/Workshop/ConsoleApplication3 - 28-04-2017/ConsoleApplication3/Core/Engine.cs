@@ -16,13 +16,12 @@ namespace SchoolSystem.Core
         public Engine(IReader reader)
         {
             this.reader = reader;
-            Teachers = new Dictionary<int, ITeacher>();
-            Students = new Dictionary<int, IStudent>();
         }
 
-        internal static Dictionary<int, ITeacher> Teachers { get; set; }
+        //Fix it to internal
+        public static Dictionary<int, ITeacher> Teachers { get; set; } = new Dictionary<int, ITeacher>();
 
-        internal static Dictionary<int, IStudent> Students { get; set; }
+        public static Dictionary<int, IStudent> Students { get; set; } = new Dictionary<int, IStudent>();
 
         public void Start()
         {
