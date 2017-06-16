@@ -1,0 +1,326 @@
+ERROR: Error activating ICommand
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for ICommand
+
+Suggestions:
+  1) Ensure that you have defined a binding for ICommand.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+ERROR: Error activating IDatabase
+More than one matching bindings are available.
+Matching bindings:
+  1) binding from IDatabase to Database
+  2) binding from IDatabase to Database
+Activation path:
+  2) Injection of dependency IDatabase into parameter database of constructor of type CreateProjectCommand
+  1) Request for ICommand
+
+Suggestions:
+  1) Ensure that you have defined a binding for IDatabase only once.
+
+ERROR: No command has been provided!
+ERROR: Error activating IDatabase using binding from IDatabase to Database
+No constructor was available to create an instance of the implementation type.
+
+Activation path:
+  2) Injection of dependency IDatabase into parameter database of constructor of type CreateProjectCommand
+  1) Request for ICommand
+
+Suggestions:
+  1) Ensure that the implementation type has a public constructor.
+  2) If you have implemented the Singleton pattern, use a binding with InSingletonScope() instead.
+
+ERROR: Error activating IDatabase using binding from IDatabase to Database
+No constructor was available to create an instance of the implementation type.
+
+Activation path:
+  2) Injection of dependency IDatabase into parameter database of constructor of type CreateProjectCommand
+  1) Request for ICommand
+
+Suggestions:
+  1) Ensure that the implementation type has a public constructor.
+  2) If you have implemented the Singleton pattern, use a binding with InSingletonScope() instead.
+
+ERROR: Error activating IModelsFactory
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  2) Injection of dependency IModelsFactory into parameter factory of constructor of type CreateProjectCommand
+  1) Request for ICommand
+
+Suggestions:
+  1) Ensure that you have defined a binding for IModelsFactory.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+INFO: Successfully created a new project!
+INFO: No projects in the database!
+INFO: Successfully created a new project!
+INFO: Name: DeathStar
+  Starting date: 2016-01-01
+  Ending date: 2018-05-04
+  State: Active
+  Users: 
+  - This project has no users!
+  Tasks: 
+  - This project has no tasks!
+INFO: Successfully created a new project!
+INFO: Name: DeathStar
+  Starting date: 2016-01-01
+  Ending date: 2018-05-04
+  State: Active
+  Users: 
+  - This project has no users!
+  Tasks: 
+  - This project has no tasks!
+Name: SomeOtherStarWarsStuff
+  Starting date: 2016-01-01
+  Ending date: 2018-05-04
+  State: Active
+  Users: 
+  - This project has no users!
+  Tasks: 
+  - This project has no tasks!
+ERROR: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+ERROR: Error activating ICommand
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for ICommand
+
+Suggestions:
+  1) Ensure that you have defined a binding for ICommand.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+ERROR: Object reference not set to an instance of an object.
+ERROR: Invalid command parameters count!
+ERROR: Error activating ICommand
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for ICommand
+
+Suggestions:
+  1) Ensure that you have defined a binding for ICommand.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+ERROR: Error activating ICommand
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for ICommand
+
+Suggestions:
+  1) Ensure that you have defined a binding for ICommand.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+ERROR: Error activating ICommand
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for ICommand
+
+Suggestions:
+  1) Ensure that you have defined a binding for ICommand.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+ERROR: No command has been provided!
+ERROR: Error activating ICommand
+More than one matching bindings are available.
+Matching bindings:
+  1) binding from ICommand to ValidatableCommand
+  2) binding from ICommand to CreateTaskCommand
+  3) binding from ICommand to CreateUserCommand
+  4) binding from ICommand to ListProjectDetailsCommand
+  5) binding from ICommand to ListProjectsCommand
+Activation path:
+  2) Injection of dependency ICommand into parameter command of constructor of type ValidatableCommand
+  1) Request for ICommand
+
+Suggestions:
+  1) Ensure that you have defined a binding for ICommand only once.
+
+ERROR: No command has been provided!
+ERROR: Error activating ICommand using binding from ICommand to ValidatableCommand
+A cyclical dependency was detected between the constructors of two services.
+
+Activation path:
+  2) Injection of dependency ICommand into parameter command of constructor of type ValidatableCommand
+  1) Request for ICommand
+
+Suggestions:
+  1) Ensure that you have not declared a dependency for ICommand on any implementations of the service.
+  2) Consider combining the services into a single one to remove the cycle.
+  3) Use property injection instead of constructor injection, and implement IInitializable
+     if you need initialization logic to be run after property values have been injected.
+
+ERROR: Error activating ICommand
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for ICommand
+
+Suggestions:
+  1) Ensure that you have defined a binding for ICommand.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+ERROR: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+ERROR: Error activating ICachingService
+More than one matching bindings are available.
+Matching bindings:
+  1) binding from ICachingService to CachingService
+  2) binding from ICachingService to CachingService
+Activation path:
+  1) Request for ICachingService
+
+Suggestions:
+  1) Ensure that you have defined a binding for ICachingService only once.
+
+ERROR: Error activating ICachingService
+More than one matching bindings are available.
+Matching bindings:
+  1) binding from ICachingService to CachingService
+  2) binding from ICachingService to CachingService
+Activation path:
+  1) Request for ICachingService
+
+Suggestions:
+  1) Ensure that you have defined a binding for ICachingService only once.
+
+ERROR: An item with the same key has already been added.
+ERROR: An item with the same key has already been added.
+ERROR: Error activating ICommand
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for ICommand
+
+Suggestions:
+  1) Ensure that you have defined a binding for ICommand.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+ERROR: Error activating ICommand
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for ICommand
+
+Suggestions:
+  1) Ensure that you have defined a binding for ICommand.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+ERROR: Error activating ICommand
+More than one matching bindings are available.
+Matching bindings:
+  1) binding from ICommand to CreateProjectCommand
+  2) binding from ICommand to CreateTaskCommand
+  3) binding from ICommand to CreateUserCommand
+  4) binding from ICommand to ListProjectDetailsCommand
+  5) binding from ICommand to CacheableCommand
+Activation path:
+  2) Injection of dependency ICommand into parameter command of constructor of type CacheableCommand
+  1) Request for ICommand
+
+Suggestions:
+  1) Ensure that you have defined a binding for ICommand only once.
+
+ERROR: Error activating ICommand
+More than one matching bindings are available.
+Matching bindings:
+  1) binding from ICommand to CreateProjectCommand
+  2) binding from ICommand to CreateTaskCommand
+  3) binding from ICommand to CreateUserCommand
+  4) binding from ICommand to ListProjectDetailsCommand
+  5) binding from ICommand to CacheableCommand
+Activation path:
+  2) Injection of dependency ICommand into parameter command of constructor of type CacheableCommand
+  1) Request for ICommand
+
+Suggestions:
+  1) Ensure that you have defined a binding for ICommand only once.
+
+ERROR: Error activating ICommand
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for ICommand
+
+Suggestions:
+  1) Ensure that you have defined a binding for ICommand.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+ERROR: Error activating ICommand
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for ICommand
+
+Suggestions:
+  1) Ensure that you have defined a binding for ICommand.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+ERROR: Error activating ICommand
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for ICommand
+
+Suggestions:
+  1) Ensure that you have defined a binding for ICommand.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+ERROR: Unable to cast object of type 'System.String' to type 'System.Type'.
+ERROR: Unable to cast object of type 'System.String' to type 'System.Type'.
+ERROR: Error activating ICommand
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for ICommand
+
+Suggestions:
+  1) Ensure that you have defined a binding for ICommand.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+ERROR: Error activating ICommand
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for ICommand
+
+Suggestions:
+  1) Ensure that you have defined a binding for ICommand.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+ERROR: Invalid command parameters count!
+ERROR: Invalid command parameters count!
