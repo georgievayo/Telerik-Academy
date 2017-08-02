@@ -1,0 +1,39 @@
+header
+
+nav.navbar.navbar-default(role='navigation')
+  // Brand and toggle get grouped for better mobile display
+  .navbar-header
+    button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+      span.sr-only Toggle navigation
+      span.icon-bar
+      span.icon-bar
+      span.icon-bar
+    a#logoBtn.navbar-brand(href='/') EventsBox
+  // Collect the nav links, forms, and other content for toggling
+  .navbar-collapse
+    ul.nav.navbar-nav
+      li#homeBtn
+        a(href='/') Home
+      li#categoriesBtn
+        a(href='/categories') Categories
+      li#calendarBtn
+        a(href='/events-calendar') Calendar
+      li#searchBtn
+        a(href='/search') Search
+    ul.nav.navbar-nav
+        if user
+            li#createEventBtn
+                a(href='/events/create') Create event
+    ul.nav.navbar-nav.navbar-right
+      if user
+        li
+            img.user-avatar(src=user.avatar)
+        li#username
+            a(href='/users/' + user.username) #{user.username}
+        li#logout
+            a(href='/logout') Logout 
+      else
+        li#login
+            a(href='/login') Login
+        li#signup
+            a(href='/signup') Signup

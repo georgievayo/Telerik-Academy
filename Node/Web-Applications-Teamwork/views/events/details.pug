@@ -1,0 +1,91 @@
+extends ../layout
+
+block content
+    div.row
+        div#details-box.col-md-6
+            h1#title
+                | #{event.title}
+            h4#posted-by
+                | posted by 
+                a(href="/users/" + event.user) #{event.user}
+            img#event-img.img-rounded(src=event.photo)
+            br
+            ul.details.col-md-10
+                if user
+                    li.media
+                        if user.votedEvents.indexOf(event.title) < 0
+                            span.glyphicon.glyphicon-thumbs-up 
+                        span#likes 
+                            | #{event.likes} 
+                        | Likes
+                li.media
+                    span.glyphicon.glyphicon-map-marker
+                    <strong>  City:</strong> 
+                    span.data #{event.place}
+                li.media
+                    span.glyphicon.glyphicon-calendar
+                    <strong>  Date:</strong> 
+                    span.data #{event.date}
+                li.media
+                    span.glyphicon.glyphicon-time
+                    <strong>  Time:</strong> 
+                    span.data #{event.time}
+                li.media 
+                    <strong>Categories:</strong> 
+                    span #{event.categories}
+                li#details.media 
+                    <strong>Details:</strong> 
+                    span.data #{event.details}
+                li.media#validation-errors
+        div#chat.col-md-5
+            ul#messages
+                each message in chat
+                    li.media
+                        .media-body  
+                            a.pull-left(href='#')
+                                img.media-object.img-circle(src=message.avatar)
+                            |#{message.content}
+                            br
+                            small.text-muted Posted by #{message.user} at #{message.time}
+                            hr
+            div#input.col-xs-10
+                input#new-message.col-lg-10.form-control(autocomplete='off', placeholder="Enter your message...")
+                button#send.col-lg-2.btn.btn-success Send
+
+    if user && user.username == event.user
+        div#creator-buttons.row.col-xs-12
+            button(id="delete-event-button", class="btn btn-lg btn-danger") 
+                span.glyphicon.glyphicon-trash
+                span.button-text Delete event
+            button(id="update-event-button", class="btn btn-lg btn-warning")
+                span.glyphicon.glyphicon-pencil
+                span.button-text Update event
+            button(id="change-event-photo-btn", class="btn btn-lg btn-info", data-toggle="modal", data-target="#myModal")
+                span.glyphicon.glyphicon-picture
+                span.button-text Update event photo
+            button(id="cancel-event-button", class="btn btn-lg btn-danger hidden") 
+                span.glyphicon.glyphicon-remove
+                span.button-text Cancel
+            button(id="confirm-event-button", class="btn btn-lg btn-success hidden") 
+                span.glyphicon.glyphicon-floppy-disk
+                span.button-text Confirm
+        
+        include ../partials/upload.pug
+        include ../errors/all
+    script(src='/socket.io/socket.io.js')
+    script(src='https://code.jquery.com/jquery-1.11.1.js')
+    script.
+        $(function () {
+        if(!document.getElementById('username')) {
+            $('#input').hide();
+        }
+        var socket = io();
+        $('#send').click(function () {
+        socket.emit('chat message', {user: $('#username').text(), avatar: $(".user-avatar").attr("src"), content: $('#new-message').val(), time: (new Date).toLocaleTimeString(), room: $('#title').text()});
+        $('#new-message').val('');
+        return false;
+        });
+        socket.on('chat message', function (msg) {
+        $('#messages').append($(`<li class="media"><div class="media-body"><a href="#" class="pull-left"><img class="media-object img-circle" src="${msg.avatar}"></a>${msg.content}<br><small class="text-muted">Posted by ${msg.user} at ${msg.time}</small><hr></div></li>`));
+        });
+        });

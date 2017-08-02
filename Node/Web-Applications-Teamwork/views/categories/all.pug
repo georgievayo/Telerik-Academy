@@ -1,0 +1,10 @@
+extends ../layout
+
+block content
+    h1
+        | All categories
+    div.all-categories
+        each cat in categories
+            div.category-option
+                button(type="button", class="category-btn btn btn-success btn-lg btn-block") #{cat.name}
+                div.category-results

@@ -1,0 +1,10 @@
+.user-thumbnail {
+    padding-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 15pt;
+}
+
+#hide-my-events-btn, #cancel-profile-btn, #confirm-profile-btn {
+    display: none;
+}

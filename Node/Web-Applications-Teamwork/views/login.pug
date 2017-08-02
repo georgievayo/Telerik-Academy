@@ -1,0 +1,11 @@
+extends ./layout
+
+block content
+    .login-container
+        #output
+        .avatar
+        .form-box
+            form(action='/login', method='post')
+              input(name='username', type='text', id="username", placeholder='username')
+              input(type='password', name="password", id="password", placeholder='password')
+              button.btn.btn-info.btn-block.login(type='submit') Login
